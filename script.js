@@ -59,9 +59,10 @@ cs('.pizzaInfo--cancelButton, .pizzaInfo--cancelMobileButton').forEach((item) =>
 c('.pizzaInfo--qtmenos').addEventListener('click', () => {
     if (modalQt > 1) {
         modalQt--;
-        c('.pizzaInfo--qt').innerHTML = modalQt;
+    } else {
+        closeModal();
     }
-
+    c('.pizzaInfo--qt').innerHTML = modalQt;
 });
 c('.pizzaInfo--qtmais').addEventListener('click', () => {
     modalQt++;
@@ -166,3 +167,6 @@ function updateCart() {
         c('aside').style.left = '100vw';
     }
 }
+c('.cart--finalizar').addEventListener('click', () => {
+    alert('OPS! Essa opção ainda não esta habilitada!');
+});

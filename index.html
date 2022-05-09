@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Modelo de pizza -->
     <div class="models">
         <div class="pizza-item">
             <a href="">
@@ -20,6 +21,7 @@
             <div class="pizza-item--name">--</div>
             <div class="pizza-item--desc">--</div>
         </div>
+        <!--Modelo de item do carrinho-->
         <div class="cart--item">
             <img src="" />
             <div class="cart--item-nome">--</div>
@@ -34,9 +36,11 @@
         <div class="menu-openner"><span>0</span><img src="/images/carrovazio.png" class="carrinho"></div>
     </header>
     <main>
-        <h1>Pizzas</h1>
+        <h1>Mega Pizzaria</h1>
+        <!--Área onde vai ficar as pizzas-->
         <div class="pizza-area"></div>
     </main>
+    <!--aside é o carrinho-->
     <aside>
         <div class="cart--area">
             <div class="menu-closer">❌</div>
@@ -59,6 +63,7 @@
             </div>
         </div>
     </aside>
+    <!--Modal de informações da pizza-->
     <div class="pizzaWindowArea">
         <div class="pizzaWindowBody">
             <div class="pizzaInfo--cancelMobileButton">Voltar</div>
@@ -87,13 +92,15 @@
                         </div>
                     </div>
                 </div>
+                <!--Botões do modal para adicionar item ao carrinho-->
                 <div class="pizzaInfo--addButton">Adicionar ao carrinho</div>
                 <div class="pizzaInfo--cancelButton">Cancelar</div>
             </div>
         </div>
     </div>
-
+    <!--pizza.js é onde armazena as informações das pizzas-->
     <script type="text/javascript" src="pizzas.js"></script>
+    <!--script.js fica a page completa de scripts-->
     <script type="text/javascript" src="script.js"></script>
 </body>
 
